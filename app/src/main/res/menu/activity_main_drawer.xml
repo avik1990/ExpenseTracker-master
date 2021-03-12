@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_chart"
+        android:icon="@drawable/ic_chart"
+        android:title="Chart" />
+    
+    <item
+        android:id="@+id/nav_export"
+        android:icon="@drawable/ic_export"
+        android:title="Export" />
+    
+    <item
+        android:id="@+id/nav_import"
+        android:icon="@drawable/ic_import"
+        android:title="Import" />
+    
+    <item
+        android:id="@+id/nav_calender"
+        android:icon="@drawable/ic_dayview"
+        android:title="Day Wise Expenditure"
+        android:visible="true" />
+    
+    <item
+        android:id="@+id/nav_yearwise"
+        android:icon="@drawable/ic_dayview"
+        android:title="Year Wise Expenditure"
+        android:visible="false" />
+    
+    <item
+        android:id="@+id/nav_compare"
+        android:icon="@drawable/ic_compare"
+        android:title="Comparison"
+        android:visible="false" />
+    
+    <item
+        android:id="@+id/nav_categories"
+        android:icon="@drawable/ic_chart"
+        android:title="Categories" />
+    
+    <item
+        android:id="@+id/nav_users"
+        android:icon="@drawable/ic_users"
+        android:title="Users" />
+    
+    <item
+        android:id="@+id/nav_labels"
+        android:icon="@drawable/ic_tags"
+        android:title="Add Labels" />
+    
+    <item
+        android:id="@+id/nav_backfiles"
+        android:icon="@drawable/ic_users"
+        android:title="Backup Files"
+        android:visible="false" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+    
+    <item
+        android:id="@+id/nav_exportDB"
+        android:icon="@drawable/ic_about"
+        android:title="Save Db"
+        android:visible="false" />
+    
+    <item
+        android:id="@+id/nav_graph"
+        android:icon="@drawable/ic_about"
+        android:title="Graph"
+        android:visible="false" />
+    
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_about"
+        android:title="About" />
+</menu>

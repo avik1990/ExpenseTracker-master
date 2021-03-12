@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.exptracker">
+    
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        
+        <activity
+            android:name="com.app.exptracker.dashboard.Dashboard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.app.exptracker.SLiderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing"></activity>
+        <activity
+            android:name="com.app.exptracker.ActivitySyncHistory"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing"></activity>
+        <activity
+            android:name="com.app.exptracker.daywiseexpenses.ActivityCalender"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing"></activity>
+        <activity
+            android:name="com.app.exptracker.ActivitySearch"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name="com.app.exptracker.ExpenseDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing"></activity>
+        <activity
+            android:name="com.app.exptracker.AddExpenseIncome"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name="com.app.exptracker.SplashActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.app.exptracker.chart.ActivityChart"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.app.exptracker.category.CategoryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.app.exptracker.ActivitySettings"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.app.exptracker.category.AddCategory"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.app.exptracker.DriveActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.app.exptracker.chart.ActivityCategorywiseChart"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.app.exptracker.user.AddUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing"></activity>
+        <activity
+            android:name="com.app.exptracker.GraphActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.app.exptracker.ActivityDayWiseData"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.app.exptracker.compare.ActivityCompare"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.app.exptracker.ActivityLocalBackupfiles"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.app.exptracker.tags.AddtagsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.app.exptracker.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        
+        <activity android:name="com.app.exptracker.utility.ImagePickerActivity" />
+    
+    </application>
+
+</manifest>

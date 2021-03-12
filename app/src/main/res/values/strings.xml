@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+    
+    <string name="slide_2_title">Expense Tracker</string>
+    <string name="slide_2_desc">Track your financial activity</string>
+    
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+    
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+    
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    
+    
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="slide_title">Expense Tracking</string>
+    <string name="slide_desc">Track your finalcial activity</string>
+    <string name="googledrive_api_key">AIzaSyDjPaVF5D0qliAEeZnYkuhKVVpOijiwgJc</string>
+    
+    <string-array name="transtype">
+        <item>Select Type</item>
+        <item>Expenses</item>
+        <item>Income</item>
+    </string-array>
+    
+    <string-array name="transtypes">
+        <item>Expenses</item>
+        <item>Income</item>
+    </string-array>
+    
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+
+</resources>

@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="horizontal">
+    
+    <RelativeLayout
+        android:id="@+id/child_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_side_normal"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+        
+        <FrameLayout
+            android:id="@+id/fm_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            
+            <LinearLayout
+                android:id="@+id/ll_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:src="@drawable/ic_exp" />
+                
+                <TextView
+                    android:id="@+id/cv_text"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circular_back"
+                    android:gravity="center"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+            
+            <com.app.exptracker.utility.CircularTextView
+                android:id="@+id/tv_payment_mode"
+                android:layout_width="@dimen/_19sdp"
+                android:layout_height="@dimen/_19sdp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:text="99"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </FrameLayout>
+        
+        <ImageView
+            android:id="@+id/iv_payment"
+            android:layout_width="@dimen/_8sdp"
+            android:layout_height="@dimen/_8sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@+id/fm_image"
+            android:src="@drawable/ic_exp" />
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_expense"
+            android:layout_toRightOf="@+id/iv_payment"
+            android:orientation="vertical">
+        
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="Category Data"
+                android:textSize="@dimen/_10sdp" />
+        
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/_8sdp"
+                android:visibility="visible" />
+        </LinearLayout>
+    
+        <TextView
+            android:id="@+id/tv_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:text=""
+            android:textSize="@dimen/_8sdp" />
+    </RelativeLayout>
+
+</LinearLayout>

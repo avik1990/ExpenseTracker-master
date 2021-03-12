@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.Dashboard">
+    
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:padding="@dimen/_5sdp">
+        
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <ImageView
+                android:id="@+id/ivPrevious"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentLeft="true"
+                app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp" />
+            
+            <TextView
+                android:id="@+id/tvMonthView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivNext"
+                android:layout_toRightOf="@+id/ivPrevious"
+                android:gravity="center"
+                android:text="January"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+            
+            
+            <ImageView
+                android:id="@+id/ivNext"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+        </RelativeLayout>
+        
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            android:layout_below="@+id/rlHeader"></android.support.v7.widget.RecyclerView>
+    
+    
+    </RelativeLayout>
+</RelativeLayout>
