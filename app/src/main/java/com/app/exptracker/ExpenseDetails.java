@@ -17,7 +17,6 @@ import android.os.AsyncTask;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.support.design.widget.FloatingActionButton;
 import android.text.InputType;
 import android.util.Base64;
 import android.util.Log;
@@ -40,6 +39,7 @@ import com.app.exptracker.utility.ImagePickerActivity;
 import com.app.exptracker.utility.Utils;
 import com.bumptech.glide.Glide;
 import com.google.android.flexbox.FlexboxLayout;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
 import com.jsibbold.zoomage.ZoomageView;
@@ -62,7 +62,7 @@ import java.util.Set;
 import androidx.annotation.Nullable;
 import de.hdodenhof.circleimageview.CircleImageView;
 
-import static android.support.v4.content.FileProvider.getUriForFile;
+import static androidx.core.content.FileProvider.getUriForFile;
 
 public class ExpenseDetails extends BaseActivity implements View.OnClickListener {
 

@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 
-                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
                     xmlns:app="http://schemas.android.com/apk/res-auto"
                     xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/card_view"
@@ -295,12 +295,12 @@
                             </HorizontalScrollView>
                         </LinearLayout>
                     </LinearLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
             </FrameLayout>
         </RelativeLayout>
     </ScrollView>
     
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -311,6 +311,4 @@
         app:borderWidth="0dp"
         app:elevation="@dimen/_6sdp"
         app:srcCompat="@drawable/ic_edit_white_24dp" />
-
-
 </RelativeLayout>

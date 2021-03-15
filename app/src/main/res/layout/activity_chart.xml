@@ -23,7 +23,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             
-            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/card_view"
@@ -39,7 +40,7 @@
                     android:id="@+id/pieChart"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
         </FrameLayout>
         
         <RelativeLayout
@@ -147,7 +148,7 @@
         android:visibility="gone" />
     
     
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rl_recy_avg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -155,5 +156,5 @@
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_10sdp"
-        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 </RelativeLayout>

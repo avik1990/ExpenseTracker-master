@@ -10,8 +10,6 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.widget.RecyclerView;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
@@ -24,6 +22,7 @@ import com.app.exptracker.model.ExcelDataModel;
 import com.app.exptracker.utility.BaseActivity;
 import com.app.exptracker.utility.ImagePickerActivity;
 import com.app.exptracker.utility.Utils;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
@@ -35,6 +34,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class AddUserActivity extends BaseActivity implements View.OnClickListener, UserAdapter.GetUserIDAdapter {

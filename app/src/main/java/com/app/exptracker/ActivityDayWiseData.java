@@ -5,7 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -24,7 +24,6 @@ import com.github.mikephil.charting.charts.PieChart;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class ActivityDayWiseData extends BaseActivity implements View.OnClickListener,
         DayWiseTransAdapter.GetMonthFromAdapter {

@@ -16,9 +16,6 @@ import android.os.AsyncTask;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.InputFilter;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -79,6 +76,10 @@ import java.util.Locale;
 import java.util.Set;
 
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class AddExpenseIncome extends BaseActivity implements View.OnClickListener, SelectTagAdapter.GetTagFromAdpater, CategoryAdapter.GetMonthFromAdapter, KeyboardHeightObserver {

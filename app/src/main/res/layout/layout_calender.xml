@@ -50,14 +50,14 @@
                     app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
             </RelativeLayout>
         
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rl_recyclerview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/rl_btns"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:layout_marginRight="@dimen/_10sdp"></android.support.v7.widget.RecyclerView>
+                android:layout_marginRight="@dimen/_10sdp"></androidx.recyclerview.widget.RecyclerView>
     
     
         </RelativeLayout>

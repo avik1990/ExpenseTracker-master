@@ -52,12 +52,12 @@
                 app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
         </RelativeLayout>
         
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rlRecycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layoutManager="android.support.v7.widget.GridLayoutManager"
-            android:layout_below="@+id/rlHeader"></android.support.v7.widget.RecyclerView>
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            android:layout_below="@+id/rlHeader"></androidx.recyclerview.widget.RecyclerView>
     
     
     </RelativeLayout>

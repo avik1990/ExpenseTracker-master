@@ -80,13 +80,13 @@
                         android:textColor="@color/black" />
                 </LinearLayout>
                 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rl_view1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_above="@+id/tv_total"
                     android:layout_below="@+id/lldate"
-                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"></android.support.v7.widget.RecyclerView>
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
                 
                 <TextView
                     android:id="@+id/tv_total"
@@ -157,13 +157,13 @@
                 </LinearLayout>
                 
                 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rl_view2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_above="@+id/tv_total2"
                     android:layout_below="@+id/lldate2"
-                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"></android.support.v7.widget.RecyclerView>
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
                 
                 <TextView
                     android:id="@+id/tv_total2"
